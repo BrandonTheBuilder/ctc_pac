@@ -133,12 +133,10 @@ export default{
     top: 5%;
     right: 0%;
     overflow: hidden;
+    height: 100%;
 }
 
 .videoPane{
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
     overflow: hidden; 
     text-align: center;
     transition: width 2.0s ease 0.0s;
