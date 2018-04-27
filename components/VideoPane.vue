@@ -23,7 +23,7 @@ export default {
 <style>
 video {
     margin: auto;
-    height: 100%;
+    height: auto;
     width: auto;
 }
 </style>

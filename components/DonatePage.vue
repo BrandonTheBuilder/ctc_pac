@@ -27,8 +27,6 @@
             <input type="checkbox" id="list" class="checkbox" />
             <label for="list">Add Me To Email List</label>
         </div>    
-        <div class="confirm">  
-        </div>
         <div class="donate-button">
             <i class="fa fa-credit-card"></i> 
             Donate Now
@@ -122,6 +120,7 @@ export default{
     font-weight: 500;
     margin-bottom: 10px;
     -webkit-font-smoothing: antialiased;
+    outline: none;
 }
 
 ::-webkit-input-placeholder {
@@ -250,25 +249,5 @@ export default{
     top: 0px;
     left: 3px;
     color: white;
-}
-
-.confirm {
-    display: none;
-    position: absolute;
-    top: 335px;
-    left: 15px;
-    right: 15px;
-    font-size: 16px;
-    
-    -webkit-transition: all 0.15s ease-out;
-    -moz-transition: all 0.15s ease-out;
-    -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-}
-
-.confirm i {
-    font-weight: bold;
-    text-decoration: underline;
-    font-style: normal;
 }
 </style>

@@ -140,6 +140,7 @@ export default{
     overflow: hidden; 
     text-align: center;
     transition: width 2.0s ease 0.0s;
+    height: 100vh;
 }
 
 .videoPane::-webkit-scrollbar {
