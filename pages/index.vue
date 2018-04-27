@@ -1,5 +1,5 @@
 <template>
-    <app/>
+    <app class="app"/>
 </template>
 
 <script>
@@ -13,4 +13,8 @@ export default {
 </script>
 
 <style>
+.app{
+    overflow: hidden;
+    position: relative;
+}
 </style>

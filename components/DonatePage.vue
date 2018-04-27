@@ -1,5 +1,7 @@
 <template>
-    <div class="AOI">Areas of Interest!</div>
+    <div class="donate">
+        Give us yo monies
+    </div>
 </template>
 <script>
 export default{

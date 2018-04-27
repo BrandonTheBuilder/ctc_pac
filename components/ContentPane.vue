@@ -1,12 +1,14 @@
 <template>
-<transition name="component-fade" mode="out-in">
-    <component v-bind:is="currentPage"></component>
-</transition>
+<div>
+    <transition name="component-fade" mode="out-in">
+        <component v-bind:is="currentPage"></component>
+    </transition>
+</div>
 </template>
 <script>
 import AboutPage from './AboutPage.vue'
 import AoiPage from './AoiPage.vue'
-
+import DonatePage from './DonatePage.vue'
 export default{
     data: function() {
         return {
@@ -15,7 +17,8 @@ export default{
     },
     components: {
         'about': AboutPage,
-        'aoi': AoiPage
+        'aoi': AoiPage,
+        'donate': DonatePage
     }
 }
 </script>
