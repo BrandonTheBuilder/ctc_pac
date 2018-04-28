@@ -1,38 +1,65 @@
 <!-- https://codepen.io/rosswaycaster/pen/YPQzap -->
 <template>
 
-<div class="donation-container">      
-     <div class="donation-box">
-        <div class="title">Donation Information</div>    
-        <div class="fields">
-            <input type="text" id="firstName" placeholder="First Name"/>
-            <input type="text" id="lastName" placeholder="Last Name"/> 
-            <input type="text" id="email" placeholder="Email"/>
-        </div>
-        <div class="amount">
-            <div class="button">$30</div>
-            <div class="button">$50</div>
-            <div class="button">$100</div>
-            <div class="button">
-                $<input type="text" class="set-amount" placeholder=""/>
+<div class="donatePage">
+    <div class="donationheader">
+        <h2>Donate</h2>
+    </div>
+    <div class="donationtext">
+        <p>
+            If you chose to donate not only your time, but also your money, we sincerely thank you. Donate once, or sign up as a sustaining member.
+        </p>
+        <p>
+            Support our efforts to shape public policy by joining us as a sustaining donor for as little as $10 a month. As a sustaining donor, you will be directly supporting the continued growth of Change Takes Courage, and enjoy additional benefits, including:
+        </p>
+    </div>
+    <div class="donatelist">
+        <ul>
+            <li>Automatic registration into our Political Action Club</li>
+            <li>Discounted access to all fundraising events</li>
+            <li>Free drink at all events</li>
+            <li>Free t-shirt</li>
+            <li>Annual financial disclosure report</li>
+        </ul>
+    </div>
+    <div class="donationtext">
+        <p>
+            Are you a business or nonprofit? Contact us to learn more about becoming a sponsor for our events.
+        </p>
+    </div>
+    <div class="donation-container">      
+         <div class="donation-box">
+            <div class="title">Donation Information</div>    
+            <div class="fields">
+                <input type="text" id="firstName" placeholder="First Name"/>
+                <input type="text" id="lastName" placeholder="Last Name"/> 
+                <input type="text" id="email" placeholder="Email"/>
+            </div>
+            <div class="amount">
+                <div class="button">$30</div>
+                <div class="button">$50</div>
+                <div class="button">$100</div>
+                <div class="button">
+                    $<input type="text" class="set-amount" placeholder=""/>
+                </div>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="receipt" class="checkbox"/>
+                <label for="receipt">Email Me A Receipt</label>
+                <br/>
+                <input type="checkbox" id="anon" class="checkbox" />
+                <label for="anon">Give Anonymously</label>
+                <br />
+                <input type="checkbox" id="list" class="checkbox" />
+                <label for="list">Add Me To Email List</label>
+            </div>    
+            <div class="donate-button">
+                <i class="fa fa-credit-card"></i> 
+                Donate Now
             </div>
         </div>
-        <div class="checkboxes">
-            <input type="checkbox" id="receipt" class="checkbox"/>
-            <label for="receipt">Email Me A Receipt</label>
-            <br/>
-            <input type="checkbox" id="anon" class="checkbox" />
-            <label for="anon">Give Anonymously</label>
-            <br />
-            <input type="checkbox" id="list" class="checkbox" />
-            <label for="list">Add Me To Email List</label>
-        </div>    
-        <div class="donate-button">
-            <i class="fa fa-credit-card"></i> 
-            Donate Now
-        </div>
     </div>
-</div>    
+</div>
 
 </template>
 <script>
@@ -45,6 +72,17 @@ export default{
 }
 </script>
 <style>
+.donationtext {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 1;
+  }
+  
+.donatelist {
+    text-align: left;
+    font-weight: bold;
+}
+
 .donation-container {
     /*position: relative;*/
     font-family: 'Montserrat', sans-serif;

@@ -76,6 +76,7 @@ export default{
                 this.menuPosition = 'calc(100% - 750px)';
                 this.menuColor = 'black';
             }
+            this.$refs.video.setVideoMargin();
         }
     }
     
